@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
-import music from '../../assets/pictures/projects/music.gif';
 
 export interface ProjectsProps {}
 
@@ -68,13 +66,12 @@ const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
-            <h3>& Hobbies</h3>
+            <h3>& Portfolio</h3>
             <br />
             <p>
-                Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                Click on the area below to check out some of my favorite
+                software projects I've worked on. These projects showcase my
+                experience in backend development, API design, and cloud computing.
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
@@ -84,20 +81,6 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     title="Software"
                     subtitle="PROJECTS"
                     route="software"
-                />
-                <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
-                />
-                <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
                 />
             </div>
         </div>

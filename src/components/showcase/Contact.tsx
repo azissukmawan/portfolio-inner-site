@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import colors from '../../constants/colors';
-import twitterIcon from '../../assets/pictures/contact-twitter.png';
+import React, { useEffect, useState } from 'react';
 import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
+import colors from '../../constants/colors';
 import ResumeDownload from './ResumeDownload';
 
 export interface ContactProps {}
@@ -56,8 +55,9 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
+            // Note: Update this endpoint to your own contact API
             const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
+                'https://api.example.com/api/contact',
                 {
                     method: 'POST',
                     headers: {
@@ -71,7 +71,6 @@ const Contact: React.FC<ContactProps> = (props) => {
                     }),
                 }
             );
-            // the response will be either {success: true} or {success: false, error: message}
             const data = (await res.json()) as
                 | {
                       success: false;
@@ -116,30 +115,31 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/azissukmawan'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
-                    />
-                    <SocialBox
-                        icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        link={'https://www.linkedin.com/in/abdul-azis-sukmawan/'}
                     />
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    I am currently employed, however if you have any
-                    opportunities, feel free to reach out - I would love to
-                    chat! You can reach me via my personal email, or fill out
-                    the form below!
+                    I am open to new opportunities and collaborations. Feel free to reach out
+                    if you have any questions or want to discuss potential projects. You can
+                    contact me via email, phone, or fill out the form below!
                 </p>
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:sukmawanabdul@gmail.com">
+                        sukmawanabdul@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <b>Phone: </b>
+                    <a href="tel:+6288290520647">
+                        (+62) 882-9052-0647
                     </a>
                 </p>
 

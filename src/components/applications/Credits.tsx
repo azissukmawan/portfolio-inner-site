@@ -1,27 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import Window from '../os/Window';
-import { useInterval } from 'usehooks-ts';
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { useInterval } from 'usehooks-ts';
+import Window from '../os/Window';
 
 export interface CreditsProps extends WindowAppProps {}
 
 const CREDITS = [
     {
         title: 'Engineering & Design',
-        rows: [['Henry Heffernan', 'All']],
+        rows: [['Abdul Azis Sukmawan', 'All']],
     },
     {
-        title: 'Modeling & Texturing',
+        title: 'Technologies Used',
         rows: [
-            ['Henry Heffernan', 'Texturing, Composition, & UV'],
-            ['Mickael Boitte', 'Computer Model'],
-            ['Sean Nicolas', 'Environment Models'],
+            ['React', 'Frontend Framework'],
+            ['TypeScript', 'Programming Language'],
+            ['Three.js', '3D Rendering'],
         ],
     },
     {
         title: 'Sound Design',
         rows: [
-            ['Henry Heffernan', 'Mixing, Composition, & Foley'],
             ['Sound Cassette', 'Office Ambience'],
             ['Windows 95 Startup Sound', 'Microsoft'],
         ],
@@ -29,9 +28,9 @@ const CREDITS = [
     {
         title: 'Special Thanks',
         rows: [
+            ['Henry Heffernan', 'Original Template'],
             ['Bruno Simon', 'SimonDev'],
-            ['Lorelei Kravinsky', 'Scott Bass'],
-            ['Trey Briccetti', 'Mom, Dad & Angela'],
+            ['Family & Friends', 'Support'],
         ],
     },
     {
@@ -78,7 +77,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Henry Heffernan'}
+            bottomLeftText={'© Copyright 2025 Abdul Azis Sukmawan'}
         >
             <div
                 onMouseDown={nextSlide}
@@ -86,7 +85,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
                 style={styles.credits}
             >
                 <h2>Credits</h2>
-                <p>henryheffernan.com, 2022</p>
+                <p>azissukmawan.com, 2025</p>
                 <br />
                 <br />
                 <br />
