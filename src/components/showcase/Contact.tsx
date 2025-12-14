@@ -57,7 +57,7 @@ const Contact: React.FC<ContactProps> = (props) => {
             setIsLoading(true);
             // Note: Update this endpoint to your own contact API
             const res = await fetch(
-                'https://api.example.com/api/contact',
+                'https://api-contact.amawan.dev/api/contact',
                 {
                     method: 'POST',
                     headers: {

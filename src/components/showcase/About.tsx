@@ -80,22 +80,18 @@ const About: React.FC<AboutProps> = (props) => {
                         <h3>My Hobbies</h3>
                         <br />
                         <p>
-                            Di luar dunia programming, saya memiliki beberapa hobi
-                            yang saya nikmati di waktu luang. Saya sangat menyukai
-                            bermain game - baik itu game kompetitif online maupun
-                            game single-player yang memiliki cerita menarik. Gaming
-                            tidak hanya menjadi hiburan, tapi juga membantu saya
-                            memahami bagaimana game-game tersebut dibangun dari
-                            sisi teknis.
+                            Outside of the world of programming,
+                            I have several hobbies that I enjoy in my spare time.
+                            I really enjoy playing games—both competitive online games and single-player games with interesting stories.
+                            Gaming is not only entertaining,
+                            but it also helps me understand how games are built from a technical perspective.
                         </p>
                         <br />
                         <p>
-                            Selain bermain game, saya juga gemar memancing. Memancing
-                            memberikan ketenangan tersendiri dan menjadi cara saya
-                            untuk rehat sejenak dari kesibukan coding. Ada kepuasan
-                            tersendiri saat berhasil mendapatkan ikan setelah menunggu
-                            dengan sabar - mirip dengan debugging yang membutuhkan
-                            kesabaran dan ketelitian!
+                            Besides gaming, I also enjoy fishing.
+                            Fishing provides a sense of calm and serves as a way for me to take a break from the hustle and bustle of coding.
+                            There is a unique sense of satisfaction when you finally catch a fish after waiting patiently—similar to debugging,
+                            which requires patience and precision.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>

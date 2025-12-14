@@ -12,6 +12,13 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
                         <h1>Airnav Indonesia</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://www.airnavindonesia.co.id/'}
+                        >
+                            <h4>airnavindonesia.co.id</h4>
+                        </a>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>Backend Developer Intern</h3>
@@ -46,7 +53,14 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>DOKU, PT Nusa Satu Inti Artha</h1>
+                        <h1>DOKU</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://www.doku.com/'}
+                        >
+                            <h4>doku.com</h4>
+                        </a>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>Backend Engineer Intern</h3>
@@ -89,6 +103,13 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
                         <h1>SchoolTech Indonesia</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://schooltechindonesia.com/'}
+                        >
+                            <h4>schooltechindonesia.com</h4>
+                        </a>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>Backend Developer Intern</h3>
@@ -154,7 +175,14 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>PT Arga Bangun Bangsa (ESQ Group)</h1>
+                        <h1>ESQ Group</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://esqgroup.co.id/'}
+                        >
+                            <h4>esqgroup.co.id</h4>
+                        </a>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>Data Analyst Intern</h3>
@@ -171,82 +199,6 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     remove inconsistencies, and create visual reports that supported improvements
                     in ESQ training sales.
                 </p>
-            </div>
-
-            {/* Leadership Experience */}
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>Leadership Experience</h1>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <h3 style={styles.indent}>Google Developer Student Club at UIN Jakarta</h3>
-                <p><b>Mentor of AI/ML Weekly Class</b> - April 2024</p>
-                <br />
-                <p>
-                    Took a leadership role as a mentor, actively contributing to and driving
-                    strategic decision-making processes for final project.
-                </p>
-            </div>
-
-            {/* Education */}
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>Education</h1>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <h3 style={styles.indent}>STIMIK ESQ</h3>
-                <p>Bachelor of Degree, Computer Science | GPA: 3.68 / 4.00</p>
-                <p><i>August 2021 - August 2025</i></p>
-                <br />
-                <h3 style={styles.indent}>Bangkit Academy</h3>
-                <p>Independent Study at Kampus Merdeka</p>
-                <p>Machine Learning Specialist – Graduate (Average Score 90.87)</p>
-                <p><i>August 2023 - January 2024</i></p>
-            </div>
-
-            {/* Skills */}
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>Skills & Technologies</h1>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <h3 style={styles.indent}>Hard Skills:</h3>
-                <ul>
-                    <li style={styles.row}>
-                        <p>• Web Services API, Machine Learning</p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Java, Python, PHP, Spring Boot</p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• TensorFlow, Flask, Laravel</p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Docker, SQL, Git</p>
-                    </li>
-                </ul>
-                <br />
-                <h3 style={styles.indent}>Soft Skills:</h3>
-                <ul>
-                    <li style={styles.row}>
-                        <p>• Adaptibility, Responsibility</p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Communication, Teamwork</p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Discipline and Planning</p>
-                    </li>
-                </ul>
             </div>
         </div>
     );
