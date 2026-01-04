@@ -1,5 +1,8 @@
 import React from 'react';
 import ResumeDownload from '../ResumeDownload';
+import VideoAsset from '../../general/VideoAsset';
+// @ts-ignore
+import ngobrol from '../../../assets/pictures/projects/software/ngobrol.mp4';
 
 export interface SoftwareProjectsProps {}
 
@@ -110,19 +113,30 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>Ngobrol - Chat Application</h2>
+                <h2>Ngobrol - Social Media Application</h2>
                 <br />
                 <p>
-                    Ngobrol is a real-time chat application that enables users to
-                    communicate seamlessly. The project demonstrates my skills in
-                    building real-time applications with WebSocket technology and
-                    managing user sessions.
+                    This web application is made with the MVC pattern that uses the native PHP language,
+                    the MVC pattern that is being studied in a web application course,
+                    therefore my final semester assignment group and I worked on a web application case study with this MVC pattern
+                    with a simple social media theme inspired by tweeters but not completely tweeter-like XD.
                 </p>
                 <br />
+                <div className="captioned-image">
+                    <VideoAsset src={ngobrol} />
+                    <div style={styles.caption}>
+                        <p>
+                            <sub>
+                                <b>Figure 2: </b> Ngobrol web application
+                                demo, featuring social media feature.
+                            </sub>
+                        </p>
+                    </div>
+                </div>
                 <p>
-                    Features include real-time messaging, user authentication,
-                    chat rooms, and message history. The backend is designed to
-                    handle concurrent connections efficiently.
+                    Features include user authentication,View profiles and view other profiles
+                    Update profiles, Post uploads, Post updates, Delete posts, Like posts,
+                    Post comments.
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -135,6 +149,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         >
                             <p>
                                 <b>[GitHub]</b> - Ngobrol Repository
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://ngobrol.amawan.app/"
+                        >
+                            <p>
+                                <b>[website]</b> - ngobrol.amawan.app
                             </p>
                         </a>
                     </li>
